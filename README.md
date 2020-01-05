@@ -1,4 +1,4 @@
-# site
+# site &nbsp;[![Netlify Status](https://api.netlify.com/api/v1/badges/477bc23e-a1a4-4639-9c64-5cdbf75dbece/deploy-status)](https://app.netlify.com/sites/gifted-dubinsky-d0424e/deploys)
 
 > Nuxt.js project
 
