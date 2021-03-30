@@ -21,6 +21,11 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    // Workaround to above endless reloading
+    filenames: {
+      app: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
+      chunk: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js'
+    },
     /*
     ** Run ESLint on save
     */
