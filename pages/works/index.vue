@@ -2,7 +2,7 @@
   <div>
     <v-app>
       <v-main>
-        About Page
+        Works Page
       </v-main>
       <Footer/>
     </v-app>
@@ -18,11 +18,8 @@ export default {
   },
   data() {
     return {
-      title: '',
-      url: '',
-      threads: [],
-      loading: false,
-      filter: ''
+      title: 'About',
+      loading: false
     }
   }
 }

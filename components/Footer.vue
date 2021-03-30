@@ -12,6 +12,7 @@
         class="ma-1"
         color="black"
         plain
+        @click="goAboutPage"
       >
         About
       </v-btn>
@@ -20,6 +21,7 @@
         class="ma-1"
         color="black"
         plain
+        @click="goWorksPage"
       >
         Works
       </v-btn>
@@ -28,6 +30,7 @@
         class="ma-1"
         color="black"
         plain
+        @click="goContactPage"
       >
         Contact
       </v-btn>
@@ -41,6 +44,17 @@ export default {
     return {
       loading: false
     }
-  }
+  },
+  methods: {
+      goAboutPage() {
+          this.$router.push('/about')
+      },
+      goWorksPage() {
+          this.$router.push('/works')
+      },
+      goContactPage() {
+          this.$router.push('/contact')
+      }
+  },
 }
 </script>
