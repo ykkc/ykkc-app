@@ -1,14 +1,19 @@
 <template>
   <div>
-    <Footer/>
+    <v-app>
+      <AboutPage/>
+      <Footer/>
+    </v-app>
   </div>
 </template>
 
 <script>
+import AboutPage from '~/components/pages/AboutPage.vue'
 import Footer from '~/components/Footer.vue'
 
 export default {
   components: {
+    AboutPage,
     Footer
   },
   data() {
