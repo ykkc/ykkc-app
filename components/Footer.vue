@@ -21,7 +21,7 @@
         color="black"
         plain
       >
-        Work
+        Works
       </v-btn>
       <v-btn
         :disabled="loading"
