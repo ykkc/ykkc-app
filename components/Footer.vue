@@ -1,6 +1,6 @@
 <template>
   <v-footer
-    color="primary lighten-1"
+    color="secondary darken-1"
     padless
   >
     <v-row
@@ -12,7 +12,7 @@
         class="ma-1"
         color="black"
         plain
-        @click="goAboutPage"
+        @click="switchInfo(1)"
       >
         About
       </v-btn>
@@ -21,7 +21,7 @@
         class="ma-1"
         color="black"
         plain
-        @click="goWorksPage"
+        @click="switchInfo(2)"
       >
         Works
       </v-btn>
@@ -30,10 +30,18 @@
         class="ma-1"
         color="black"
         plain
-        @click="goContactPage"
+        @click="switchInfo(3)"
       >
         Contact
       </v-btn>
+      <v-col
+        class="secondary darken-1 py-2 text-center black--text"
+        cols="12"
+      >
+        <div class="copy-right">
+          &copy;ykkc
+        </div>
+      </v-col>
     </v-row>
   </v-footer>
 </template>
@@ -45,16 +53,8 @@ export default {
       loading: false
     }
   },
-  methods: {
-      goAboutPage() {
-          this.$router.push('/about')
-      },
-      goWorksPage() {
-          this.$router.push('/works')
-      },
-      goContactPage() {
-          this.$router.push('/contact')
-      }
-  },
+  props: {
+    switchInfo: Function
+  }
 }
 </script>

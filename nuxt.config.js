@@ -45,11 +45,18 @@ module.exports = {
   ],
   vuetify: {
     theme: {
-      primary: '#3f51b5',
-      secondary: '#b0bec5',
-      accent: '#8c9eff',
-      error: '#b71c1c'
+      options: {
+        customProperties: true
+      },
+      light: true,
+      themes: {
+        light: {
+          primary: '#819cc9',
+          secondary: '#5b8dc1',
+          accent: '#8c9eff',
+          error: '#b71c1c'
+        }
+      }
     }
   }
 }
-
