@@ -1,6 +1,6 @@
 <template>
   <v-footer
-    color="primary lighten-1"
+    color="secondary darken-1"
     padless
   >
     <v-row
@@ -34,6 +34,14 @@
       >
         Contact
       </v-btn>
+      <v-col
+        class="secondary darken-1 py-2 text-center black--text"
+        cols="12"
+      >
+        <div class="copy-right">
+          &copy;ykkc
+        </div>
+      </v-col>
     </v-row>
   </v-footer>
 </template>
