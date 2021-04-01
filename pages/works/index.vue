@@ -24,3 +24,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.v-application {
+  background-color: rgb(129, 156, 201);
+}
+</style>
