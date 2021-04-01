@@ -12,7 +12,7 @@
         class="ma-1"
         color="black"
         plain
-        @click="goAboutPage"
+        @click="switchInfo(1)"
       >
         About
       </v-btn>
@@ -21,7 +21,7 @@
         class="ma-1"
         color="black"
         plain
-        @click="goWorksPage"
+        @click="switchInfo(2)"
       >
         Works
       </v-btn>
@@ -30,7 +30,7 @@
         class="ma-1"
         color="black"
         plain
-        @click="goContactPage"
+        @click="switchInfo(3)"
       >
         Contact
       </v-btn>
@@ -53,16 +53,8 @@ export default {
       loading: false
     }
   },
-  methods: {
-      goAboutPage() {
-          this.$router.push('/about')
-      },
-      goWorksPage() {
-          this.$router.push('/works')
-      },
-      goContactPage() {
-          this.$router.push('/contact')
-      }
-  },
+  props: {
+    switchInfo: Function
+  }
 }
 </script>
