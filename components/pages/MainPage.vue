@@ -1,6 +1,6 @@
 <template>
   <v-main>
-    About Page
+    Main Page
   </v-main>
 </template>
 
